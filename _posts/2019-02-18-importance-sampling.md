@@ -43,11 +43,11 @@ From the above two equations, we can see that for a same snippet $S_t, S_{t+1}, 
 
 $$
 \begin{aligned}
-p_\pi(G_t^i) & = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)p(S_{k+1}|S_k, A_k) \\\\
-& = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)\cdot \frac{b(A_k|S_k)}{b(A_k|S_k)} p(S_{k+1}|S_k, A_k) \\\\
-& = \prod_{k=t}^{T_i - 1} \frac{\pi(A_k|S_k)}{b(A_k|S_k)} b(A_k|S_k)p(S_{k+1}|S_k, A_k) \\\\
-& = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot \prod_{k=t}^{T_i - 1} b(A_k|S_k)p(S_{k+1}|S_k, A_k) \\\\
-& = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot p_b(G_t^i) \\\\
+p_\pi(G_t^i) & = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)p(S_{k+1}|S_k, A_k) \\
+& = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)\cdot \frac{b(A_k|S_k)}{b(A_k|S_k)} p(S_{k+1}|S_k, A_k) \\
+& = \prod_{k=t}^{T_i - 1} \frac{\pi(A_k|S_k)}{b(A_k|S_k)} b(A_k|S_k)p(S_{k+1}|S_k, A_k) \\
+& = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot \prod_{k=t}^{T_i - 1} b(A_k|S_k)p(S_{k+1}|S_k, A_k) \\
+& = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot p_b(G_t^i) \\
 & = \rho_{t:T_i-1}\cdot p_b(G_t^i)
 \end{aligned}
 $$
