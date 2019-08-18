@@ -99,13 +99,7 @@ $$Q(S_t, A_t) \leftarrow \alpha\left[ R_{t+1} + \gamma\sum_a \pi(a|S_{t+1})Q(S_{
 
 Then, with some sampled trajectories $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1}, \dots, R_{t+n}, S_{t+n}, A_{t+n})$, we already know rewards of a specific action for all time-steps. If we mix these known rewards into Expected Sarsa, do we still need importance sampling? Well, fortunately, not any more! We first give the overall update equations as follows:
 
-$$
-\begin{aligned}
-& Q_{t+n}(S_t, A_t) = Q_{t+n-1}(S_t, A_t) + \alpha\left[ G_{t:t+h} - Q_{t+n-1}(S_t,A_t) \right] \\\\
-& G_{t:t+n} = R_{t+1} + \gamma\sum_{a\neq A_{t+1}}\pi(a|S_{t+1})Q_{t+n-1}(S_{t+n},a) + \gamma\pi(A_{t+1}|S_{t+1})G_{t+1:t+n} \\\\
-& G_{t+n-1:t+n} = R_{t+n+1} + \gamma\sum_a \pi(a|S_{t+n})Q_{t+n}(S_{t+n},a)
-\end{aligned}
-$$
+$$\begin{aligned}& Q_{t+n}(S_t, A_t) = Q_{t+n-1}(S_t, A_t) + \alpha\left[ G_{t:t+h} - Q_{t+n-1}(S_t,A_t) \right] \\\\& G_{t:t+n} = R_{t+1} + \gamma\sum_{a\neq A_{t+1}}\pi(a|S_{t+1})Q_{t+n-1}(S_{t+n},a) + \gamma\pi(A_{t+1}|S_{t+1})G_{t+1:t+n} \\\\& G_{t+n-1:t+n} =R_{t+n+1} + \gamma\sum_a \pi(a|S_{t+n})Q_{t+n}(S_{t+n},a)\end{aligned}$$
 
 > The above algorithm is called "n-step Tree Backup Algorithm" (n-step TBA).
 
