@@ -42,14 +42,14 @@ $$p_b(G_t^i) = \prod_{k=t}^{T_i - 1} b(A_k|S_k)p(S_{k+1}|S_k, A_k)$$
 From the above two equations, we can see that for a same snippet $S_t, S_{t+1}, \dots S_{T}$ of some episode $e_i$, its return is always $G_t^i$. However, under diffrent policies, the coresponding probabilities are quite different. Therefore, in **off-policy** MC methods, we of course need to adjust $p(G_t^i\|e_i) $. It's easy to give the following derivation:
 
 $$
-\begin{aligned}
+\begin{align}
 p_\pi(G_t^i) & = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)p(S_{k+1}|S_k, A_k) \\
 & = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)\cdot \frac{b(A_k|S_k)}{b(A_k|S_k)} p(S_{k+1}|S_k, A_k) \\
 & = \prod_{k=t}^{T_i - 1} \frac{\pi(A_k|S_k)}{b(A_k|S_k)} b(A_k|S_k)p(S_{k+1}|S_k, A_k) \\
 & = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot \prod_{k=t}^{T_i - 1} b(A_k|S_k)p(S_{k+1}|S_k, A_k) \\
 & = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot p_b(G_t^i) \\
 & = \rho_{t:T_i-1}\cdot p_b(G_t^i)
-\end{aligned}
+\end{align}
 $$
 
 Having this result, we can easily transform $v_b(s)=\mathbb{E}[G_t\|s]$ to $v_\pi=\mathbb{E}[\rho_{t:T-1}G_t\|S_t=s]$. 
@@ -99,7 +99,17 @@ $$Q(S_t, A_t) \leftarrow \alpha\left[ R_{t+1} + \gamma\sum_a \pi(a|S_{t+1})Q(S_{
 
 Then, with some sampled trajectories $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1}, \dots, R_{t+n}, S_{t+n}, A_{t+n})$, we already know rewards of a specific action for all time-steps. If we mix these known rewards into Expected Sarsa, do we still need importance sampling? Well, fortunately, not any more! We first give the overall update equations as follows:
 
+<<<<<<< HEAD
 $$\begin{aligned}& Q_{t+n}(S_t, A_t) = Q_{t+n-1}(S_t, A_t) + \alpha\left[ G_{t:t+h} - Q_{t+n-1}(S_t,A_t) \right] \\\\& G_{t:t+n} = R_{t+1} + \gamma\sum_{a\neq A_{t+1}}\pi(a|S_{t+1})Q_{t+n-1}(S_{t+n},a) + \gamma\pi(A_{t+1}|S_{t+1})G_{t+1:t+n} \\\\& G_{t+n-1:t+n} =R_{t+n+1} + \gamma\sum_a \pi(a|S_{t+n})Q_{t+n}(S_{t+n},a)\end{aligned}$$
+=======
+$$
+\begin{align}
+& Q_{t+n}(S_t, A_t) = Q_{t+n-1}(S_t, A_t) + \alpha\left[ G_{t:t+h} - Q_{t+n-1}(S_t,A_t) \right] \\
+& G_{t:t+n} = R_{t+1} + \gamma\sum_{a\neq A_{t+1}}\pi(a|S_{t+1})Q_{t+n-1}(S_{t+n},a) + \gamma\pi(A_{t+1}|S_{t+1})G_{t+1:t+n} \\
+& G_{t+n-1:t+n} = R_{t+n+1} + \gamma\sum_a \pi(a|S_{t+n})Q_{t+n}(S_{t+n},a)
+\end{align}
+$$
+>>>>>>> local_dev
 
 > The above algorithm is called "n-step Tree Backup Algorithm" (n-step TBA).
 
