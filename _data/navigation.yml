@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "CV"
-    url: /files/shawn_cv_190730.pdf
+    url: /files/shawn_cv.pdf
 
   - title: "Publications"
     url: /publications/
@@ -20,3 +20,6 @@ main:
     
   # - title: "Guide"
   #   url: /markdown/
+
+  - title: "Software"
+    url: "https://github.com/Shawn-Guo-CN"
