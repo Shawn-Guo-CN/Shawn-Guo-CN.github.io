@@ -16,4 +16,4 @@ I'm Shangmin Guo, currently a research assistant at [Dr. Matthias Hennig](http:/
  - [2019-10-11] I will join [ALTA](http://alta.cambridgeenglish.org/) at University of Cambridge on 18th November 2019. 
  - [2019-10-01] We got 2 papers accepted by [3rd NeurIPS Workshop on Emergent Communication](https://sites.google.com/view/emecom2019/home), [Enhance the Compositionality of Emergent Language by Iterated Learning](/files/nips-2019-workshop1.pdf) and [The Emergence of Compositional Languages forNumeric Concepts Through Iterated Learning inNeural Agents](/files/nips-2019-workshop2.pdf).
  - [2019-09-16] Joined Dr. Matthias Hennig's team as a research assistant, and started working on a cool project, [SpikeInterface](https://github.com/SpikeInterface).
- - [2019-08-16] My dissertation can get accessed [here](/files/dissertation.pdf).
+ - [2019-08-16] My dissertation can get accessed [here](https://arxiv.org/pdf/1911.01098.pdf).
