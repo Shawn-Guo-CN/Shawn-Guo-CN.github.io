@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Shangmin (Shawn) Guo"
   avatar           : "profile.jpg"
-  bio              : "Research Assistant, School of Informatics, University of Edinburgh"
-  location         : "Edinburgh"
+  bio              : "Research Assistant, Institute for Automated Language Teaching and Assessment, University of Cambridge"
+  location         : "Cambridge"
   employer         :
   pubmed           : 
   googlescholar    : 
@@ -229,7 +229,7 @@ defaults:
       comments: true
   # _portfolio
   - scope:
-      path: ""
+      path: ""Edinburgh
       type: portfolio
     values:
       layout: single
