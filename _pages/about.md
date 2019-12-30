@@ -17,11 +17,7 @@ I'm Shangmin Guo, currently a research assistant working with [Prof. Paula Butte
  - [2019-11-29] Our work, The Emergence of Compositional Languages for Numeric Concepts Through Iterated Learning in Neural Agents, has been accepted by [EvoLang-2020](https://brussels.evolang.org/).
  - [2019-11-18] Joined Prof. Paula Buttery's team as a research assistant.
  - [2019-11-14] I've left [Dr. Matthias Hennig](http://homepages.inf.ed.ac.uk/mhennig/)'s [Neuroscience team](http://homepages.inf.ed.ac.uk/mhennig/people/), but I'm still working on some cool idea from [SpikeInterface](https://github.com/SpikeInterface) project.
- <!---
- - [2019-10-11] I will join [ALTA](http://alta.cambridgeenglish.org/) at University of Cambridge on 18th November 2019. 
--->
+ <!-- - [2019-10-11] I will join [ALTA](http://alta.cambridgeenglish.org/) at University of Cambridge on 18th November 2019. -->
  - [2019-10-01] We got 2 papers accepted by [3rd NeurIPS Workshop on Emergent Communication](https://sites.google.com/view/emecom2019/home), [Enhance the Compositionality of Emergent Language by Iterated Learning](/files/nips-2019-workshop1.pdf) and [The Emergence of Compositional Languages forNumeric Concepts Through Iterated Learning inNeural Agents](/files/nips-2019-workshop2.pdf).
- <!---
- - [2019-09-16] Joined Dr. Matthias Hennig's team as a research assistant, and started working on a cool project, [SpikeInterface](https://github.com/SpikeInterface).
--->
+ <!-- - [2019-09-16] Joined Dr. Matthias Hennig's team as a research assistant, and started working on a cool project, [SpikeInterface](https://github.com/SpikeInterface).-->
  - [2019-08-16] My dissertation can get accessed [here](https://arxiv.org/pdf/1911.01098.pdf).
