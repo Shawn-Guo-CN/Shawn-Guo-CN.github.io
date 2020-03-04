@@ -44,12 +44,15 @@ Luckily, we could introduce the following REINFORCE trick to address the problem
 $
 \nabla_\theta \mathbb{E}_{p(x;\theta)}\left[ f(x) \right] = \nabla_\theta \int f(x) p(x;\theta) dx 
 $
+
 $
  = \int f(x) \nabla_\theta p(x;\theta) dx 
 $
+
 $
 = \int f(x) p(x;\theta) \nabla_\theta \log p(x;\theta) dx 
 $
+
 $
 = \mathbb{E}_{p(x;\theta)} \left[ f(x)  \nabla_\theta \log p(x; \theta) \right]
 $

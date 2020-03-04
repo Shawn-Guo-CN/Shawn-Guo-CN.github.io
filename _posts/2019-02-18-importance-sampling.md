@@ -44,18 +44,23 @@ From the above two equations, we can see that for a same snippet $S_t, S_{t+1}, 
 $
 p_\pi(G_t^i) = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)p(S_{k+1}|S_k, A_k)
 $
+
 $
 = \prod_{k=t}^{T_i - 1} \pi(A_k|S_k)\cdot \frac{b(A_k|S_k)}{b(A_k|S_k)} p(S_{k+1}|S_k, A_k)
 $
+
 $
 = \prod_{k=t}^{T_i - 1} \frac{\pi(A_k|S_k)}{b(A_k|S_k)} b(A_k|S_k)p(S_{k+1}|S_k, A_k)
 $
+
 $
 = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot \prod_{k=t}^{T_i - 1} b(A_k|S_k)p(S_{k+1}|S_k, A_k)
 $
+
 $
 = \prod_{k=t}^{T_i - 1}\frac{\pi(A_k|S_k)}{b(A_k|S_k)} \cdot p_b(G_t^i)
 $
+
 $
 = \rho_{t:T_i-1}\cdot p_b(G_t^i)
 $
@@ -110,9 +115,11 @@ Then, with some sampled trajectories $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1}, \dot
 $
  Q_{t+n}(S_t, A_t) = Q_{t+n-1}(S_t, A_t) + \alpha\left[ G_{t:t+h} - Q_{t+n-1}(S_t,A_t) \right]
 $
+
 $
 G_{t:t+n} = R_{t+1} + \gamma\sum_{a\neq A_{t+1}}\pi(a|S_{t+1})Q_{t+n-1}(S_{t+n},a) + \gamma\pi(A_{t+1}|S_{t+1})G_{t+1:t+n}
 $
+
 $
 G_{t+n-1:t+n} = R_{t+n+1} + \gamma\sum_a \pi(a|S_{t+n})Q_{t+n}(S_{t+n},a)
 $
