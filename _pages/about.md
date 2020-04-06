@@ -13,6 +13,7 @@ Hi,
 I'm Shangmin Guo, currently a research assistant working with [Prof. Paula Buttery](https://www.cl.cam.ac.uk/~pjb48/) at [Institute for Automated Language Teaching and Assessment](http://alta.cambridgeenglish.org/), University of Cambridge. My research interests include but not limited to: Evolutionary Linguistics, Grounded Language Learning, Natural Language Understanding and Disentangled  Representation.
 
 ###  Latest News
+ - [2020-04-06] The slides about our ICLR-2020 work can be accessed at [here](/files/NIL-slides.pdf).
  - [2019-12-15] Our work, Compositional languages emerge in a neural iterated learning model, has been accepted by [ICLR-2020](https://iclr.cc/).
  - [2019-11-29] Our work, The Emergence of Compositional Languages for Numeric Concepts Through Iterated Learning in Neural Agents, has been accepted by [EvoLang-2020](https://brussels.evolang.org/).
  - [2019-11-18] Joined Prof. Paula Buttery's team as a research assistant.
